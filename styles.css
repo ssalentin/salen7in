@@ -5,7 +5,7 @@
   --fg: #1f2328;
   --muted: #5b626b;
   --line: #d9d4c8;
-  --accent: #2f6f5e;
+  --accent: #C2410C;
   --card: #ffffff;
   --max: 960px;
 }
@@ -16,7 +16,7 @@
     --fg: #e6e4df;
     --muted: #9aa1a9;
     --line: #2c3036;
-    --accent: #7fc4ae;
+    --accent: #FF8A5B;
     --card: #1d2024;
   }
 }
