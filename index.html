@@ -5,13 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>salen7in: demos</title>
   <meta name="description" content="Public demos by salen7in: small, self-hostable tools with their source on GitHub.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon-180.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header class="site-header">
-    <!-- Placeholder wordmark. Replace with the logo from the Computational Designer (SVG, light/dark). -->
-    <a class="wordmark" href="/">salen7in</a>
+    <a class="brand" href="/">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/salen7in-logo-dark.svg">
+        <img src="assets/salen7in-logo-light.svg" alt="salen7in" width="278" height="64">
+      </picture>
+    </a>
     <p class="tagline">Small tools, open source, self-hostable.</p>
   </header>
 
