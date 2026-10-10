@@ -1,0 +1,124 @@
+/* salen7in landing page. No external requests: fonts and images are self-hosted. */
+
+:root {
+  --bg: #f7f5f0;
+  --fg: #1f2328;
+  --muted: #5b626b;
+  --line: #d9d4c8;
+  --accent: #2f6f5e;
+  --card: #ffffff;
+  --max: 960px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15171a;
+    --fg: #e6e4df;
+    --muted: #9aa1a9;
+    --line: #2c3036;
+    --accent: #7fc4ae;
+    --card: #1d2024;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+a { color: var(--accent); }
+
+code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-size: 0.9em;
+}
+
+.site-header,
+main,
+.site-footer {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.site-header {
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.wordmark {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.tagline {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+}
+
+.intro {
+  padding: 1.5rem 0 2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.intro h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.intro p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* Auto-fill grid: new demo cards reflow without CSS changes. */
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+  padding: 2rem 0 3rem;
+}
+
+.demo {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.demo h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.demo p {
+  margin: 0 0 1rem;
+  color: var(--muted);
+}
+
+.demo-links {
+  margin-top: auto;
+  display: flex;
+  gap: 1rem;
+}
+
+.demo-links a {
+  font-weight: 600;
+}
+
+.site-footer {
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
