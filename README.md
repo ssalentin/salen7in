@@ -8,4 +8,4 @@ Copy one `<article class="demo">` block in `index.html`, newest first. The grid 
 
 ## Deploy
 
-The site is served as a static tree by the `salen7in-static` container on the websites host. Deploy and rollback are run by the Webmaster; see the release notes in the Multica issue IS-255.
+The site is served as a static tree by the `salen7in-static` container on the websites host. Deploy and rollback are run by the Webmaster. Release notes live with the Webmaster.
